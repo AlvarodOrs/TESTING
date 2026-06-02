@@ -1,1 +1,39 @@
-LS0tCnRpdGxlOiBUZXN0U29sdmVyCmNhdGVnb3J5OiB1dGlscwpkZXNjcmlwdGlvbjogQ0xJIGF1dG9tYXRpb24gdG9vbCB0aGF0IGxvZ3MgaW50byB0aGUgVU5JUiB2aXJ0dWFsIGNhbXB1cyBhbmQgc29sdmVzIGF2YWlsYWJsZSBjb3Vyc2UgdGVzdHMgYXV0b21hdGljYWxseSB1c2luZyBTZWxlbml1bS4Kc3RhdHVzOiBjb21wbGV0ZQp0YWdzOgogIC0gYXV0b21hdGlvbgogIC0gcHl0aG9uCiAgLSBzZWxlbml1bQogIC0gdW5pcgogIC0gdW5pdmVyc2l0eQogIC0gdXRpbHMKICAtIHdlYi1zY3JhcGluZwpkYXRlOiAyMDI1LTExLTE0CnVwZGF0ZWQ6IDIwMjYtMDUtMzAKcmVwbzogaHR0cHM6Ly9zb2NpYWwuYWRvcnMuZGV2L2dpdGh1Yi9UZXN0U29sdmVyCi0tLQojIyBPdmVydmlldwoKVGVzdFNvbHZlciBpcyBhIGNvbW1hbmQtbGluZSBib3QgdGhhdCBhdXRvbWF0ZXMgdGhlIHJlc29sdXRpb24gb2Ygc2VsZi1hc3Nlc3NtZW50IHRlc3RzIG9uIHRoZSBVTklSIHZpcnR1YWwgY2FtcHVzLiBJdCBoYW5kbGVzIGxvZ2luLCBjb3Vyc2UgbmF2aWdhdGlvbiwgYW5kIHRlc3QgYW5zd2VyaW5nIOKAlCBzdXBwb3J0aW5nIGJvdGggc2luZ2xlLWNob2ljZSBhbmQgbXVsdGktY2hvaWNlIHF1ZXN0aW9uIGZvcm1hdHMg4oCUIGFuZCBjb2xsZWN0cyBjb3JyZWN0aW9uIHJlc3VsdHMgd2hlbiBhdmFpbGFibGUuCgpCdWlsdCB3aXRoIFNlbGVuaXVtIGFuZCBgd2ViZHJpdmVyLW1hbmFnZXJgIGZvciB6ZXJvLWNvbmZpZ3VyYXRpb24gQ2hyb21lIGRyaXZlciBzZXR1cC4KCiMjIFNjb3BlCgotICoqQXV0aGVudGljYXRpb24qKiDigJQgYXV0b21hdGVkIGxvZ2luIHRvIHRoZSBVTklSIHBsYXRmb3JtIHZpYSBjcmVkZW50aWFscyBpbiBjb25maWcKLSAqKkNvdXJzZSBuYXZpZ2F0aW9uKiog4oCUIHN1cHBvcnRzIG9uZSBvciBtdWx0aXBsZSBjb3Vyc2UgSURzIHBhc3NlZCB2aWEgY29uZmlndXJhdGlvbgotICoqVGVzdCByZXNvbHV0aW9uKiog4oCUIGRldGVjdHMgcXVlc3Rpb24gdHlwZSBhbmQgc2VsZWN0cyBhbnN3ZXJzOyBjb2xsZWN0cyBjb3JyZWN0aW9uIGZlZWRiYWNrIHdoZW4gc2hvd24KLSAqKkRyaXZlciBtYW5hZ2VtZW50Kiog4oCUIHVzZXMgYHdlYmRyaXZlci1tYW5hZ2VyYCB0byBoYW5kbGUgQ2hyb21lIFdlYkRyaXZlciBhdXRvbWF0aWNhbGx5CgojIyBDb25zdHJhaW50cwoKLSBSZXF1aXJlcyBhIHJlYWwgQ2hyb21lIGluc3RhbGxhdGlvbjsgQ2hyb21pdW0gZm9ya3MgbWF5IGNhdXNlIGZhaWx1cmVzCi0gSW5jb21wYXRpYmxlIHdpdGggMkZBLXByb3RlY3RlZCBhY2NvdW50cwotIERlcGVuZGVudCBvbiBVTklSJ3MgSFRNTCBzdHJ1Y3R1cmUg4oCUIHNlbGVjdG9yIHVwZGF0ZXMgbWF5IGJlIG5lZWRlZCBpZiB0aGUgcGxhdGZvcm0gY2hhbmdlcwoKIyMgU3RhdHVzCgpDb21wbGV0ZS4gQ29yZSBhdXRvbWF0aW9uIGZsb3cgaXMgd29ya2luZy4gU2VsZWN0b3IgbWFpbnRlbmFuY2UgbWF5IGJlIG5lZWRlZCBvdmVyIHRpbWUuCg==
+---
+title: TestSolver
+category: utils
+description: CLI automation tool that logs into the UNIR virtual campus and solves available course tests automatically using Selenium.
+status: complete
+tags:
+  - automation
+  - python
+  - selenium
+  - unir
+  - university
+  - utils
+  - web-scraping
+date: 2025-11-14
+updated: 2026-05-30
+repo: https://social.adors.dev/github/TestSolver
+---
+## Overview
+
+TestSolver is a command-line bot that automates the resolution of self-assessment tests on the UNIR virtual campus. It handles login, course navigation, and test answering — supporting both single-choice and multi-choice question formats — and collects correction results when available.
+
+Built with Selenium and `webdriver-manager` for zero-configuration Chrome driver setup.
+
+## Scope
+
+- **Authentication** — automated login to the UNIR platform via credentials in config
+- **Course navigation** — supports one or multiple course IDs passed via configuration
+- **Test resolution** — detects question type and selects answers; collects correction feedback when shown
+- **Driver management** — uses `webdriver-manager` to handle Chrome WebDriver automatically
+
+## Constraints
+
+- Requires a real Chrome installation; Chromium forks may cause failures
+- Incompatible with 2FA-protected accounts
+- Dependent on UNIR's HTML structure — selector updates may be needed if the platform changes
+
+## Status
+
+Complete. Core automation flow is working. Selector maintenance may be needed over time.

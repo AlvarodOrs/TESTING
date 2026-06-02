@@ -1,1 +1,39 @@
-LS0tCnRpdGxlOiBHaWRlb24KY2F0ZWdvcnk6IGVuZ2luZWVyaW5nCmRlc2NyaXB0aW9uOiBHaWRlb24gaXMgYW4gYXV0b21hdGlvbiB0b29sIHRoYXQgc3luY3MgR2l0SHViIHJlcG9zaXRvcnkgZGF0YSBpbnRvIGEgZGV2ZWxvcGVy4oCZcyBwcm9maWxlIFJFQURNRSBhbmQgTmV4dC5qcyBwb3J0Zm9saW8gc2l0ZSwga2VlcGluZyBib3RoIGNvbnRpbnVvdXNseSB1cCB0byBkYXRlIHdpdGhvdXQgbWFudWFsIGVkaXRzLgpzdGF0dXM6IGluLXByb2dyZXNzCnRhZ3M6CiAgLSBhdXRvbWF0aW9uCiAgLSBkZXZlbG9wZXItdG9vbHMKICAtIGVuZ2luZWVyaW5nCiAgLSBnaXRodWItYXBpCiAgLSBuZXh0anMKICAtIHR5cGVzY3JpcHQKZGF0ZTogMjAyNi0wNS0zMAp1cGRhdGVkOiAyMDI2LTA2LTAyCnJlcG86IGh0dHBzOi8vc29jaWFsLmFkb3JzLmRldi9naXRodWIvR2lkZW9uCi0tLQojIyBPdmVydmlldwoKQXV0b21hdGlvbiBzeXN0ZW0gdGhhdCBwdWxscyBHaXRIdWIgcmVwb3NpdG9yeSBtZXRhZGF0YSBhbmQgZ2VuZXJhdGVzIHN5bmNocm9uaXplZCB1cGRhdGVzIGZvciBhIHByb2ZpbGUgUkVBRE1FIGFuZCBhIE5leHQuanMgcG9ydGZvbGlvIHdlYnNpdGUuCgpJbnN0ZWFkIG9mIG1hbnVhbGx5IHVwZGF0aW5nIHByb2plY3QgbGlzdHMsIHN0YXRzLCBvciBkZXNjcmlwdGlvbnMgZXZlcnkgdGltZSBhIHJlcG8gY2hhbmdlcywgR2lkZW9uIGZldGNoZXMgdGhlIGxhdGVzdCBwdWJsaWMgcmVwbyBkYXRhIGFuZCByZWdlbmVyYXRlcyB0aGUgcmVsZXZhbnQgc2VjdGlvbnMgYXV0b21hdGljYWxseS4KCiMjIFNjb3BlCgoqIEdpdEh1YiByZXBvc2l0b3J5IG1ldGFkYXRhIGluZ2VzdGlvbiB2aWEgQVBJCiogQXV0b21hdGVkIGdlbmVyYXRpb24gb2YgcHJvZmlsZSBSRUFETUUgY29udGVudAoqIEF1dG9tYXRlZCB1cGRhdGVzIHRvIHBvcnRmb2xpbyB3ZWJzaXRlIE1EWCBwcm9qZWN0IHBhZ2VzCiogQ29udGludW91cyBzeW5jaHJvbml6YXRpb24gYmV0d2VlbiBHaXRIdWIgYW5kIHBlcnNvbmFsIHdlYiBwcmVzZW5jZQoKIyMgQ29uc3RyYWludHMKCiogTGltaXRlZCB0byBwdWJsaWMgR2l0SHViIGRhdGEKKiBObyBkZWZpbmVkIGNvbmZpZ3VyYXRpb24gc2NoZW1hIHByb3ZpZGVkCiogTm8gY29uZmxpY3QgaGFuZGxpbmcgc3RyYXRlZ3kgZm9yIG1hbnVhbCB2cyBhdXRvbWF0ZWQgZWRpdHMgc3BlY2lmaWVkCiogRGVwZW5kZW50IG9uIGV4dGVybmFsIHNjaGVkdWxpbmcvdHJpZ2dlciBzeXN0ZW0gZm9yIGV4ZWN1dGlvbgoKIyMgU3RhdHVzCgpJbiBwcm9ncmVzcy4gQ29yZSBzeW5jIHBpcGVsaW5lIHVuZGVyIGRldmVsb3BtZW50Lgo=
+---
+title: Gideon
+category: engineering
+description: Gideon is an automation tool that syncs GitHub repository data into a developer’s profile README and Next.js portfolio site, keeping both continuously up to date without manual edits.
+status: in-progress
+tags:
+  - automation
+  - developer-tools
+  - engineering
+  - github-api
+  - nextjs
+  - typescript
+date: 2026-05-30
+updated: 2026-06-02
+repo: https://social.adors.dev/github/Gideon
+---
+## Overview
+
+Automation system that pulls GitHub repository metadata and generates synchronized updates for a profile README and a Next.js portfolio website.
+
+Instead of manually updating project lists, stats, or descriptions every time a repo changes, Gideon fetches the latest public repo data and regenerates the relevant sections automatically.
+
+## Scope
+
+* GitHub repository metadata ingestion via API
+* Automated generation of profile README content
+* Automated updates to portfolio website MDX project pages
+* Continuous synchronization between GitHub and personal web presence
+
+## Constraints
+
+* Limited to public GitHub data
+* No defined configuration schema provided
+* No conflict handling strategy for manual vs automated edits specified
+* Dependent on external scheduling/trigger system for execution
+
+## Status
+
+In progress. Core sync pipeline under development.
